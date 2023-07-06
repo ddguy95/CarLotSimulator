@@ -25,8 +25,13 @@ namespace CarLotSimulator
             instance1.Year = 2023;
 
             carLotInstance.ListOfCars.Add(instance1);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"There are {CarLot.numberOfCars} on the lot.");
+            Console.WriteLine();
 
-            Car instance2 = new Car() 
+            Car instance2 = new Car()
+            
+
             {
                 EngineNoise = "ROOOOOAAAARRRRRR", 
                 HonkNoise = "OOONNNN", 
@@ -36,10 +41,16 @@ namespace CarLotSimulator
             };
 
             carLotInstance.ListOfCars.Add(instance2);
-            
+            CarLot.numberOfCars++;
+            Console.WriteLine($"There are {CarLot.numberOfCars} on the lot.");
+            Console.WriteLine();
+
             Car instance3 = new Car("Lexus", "RX350", 2023, "heyy", "what's up");
 
             carLotInstance.ListOfCars.Add(instance3);
+            CarLot.numberOfCars++;
+            Console.WriteLine($"There are {CarLot.numberOfCars} on the lot.");
+            Console.WriteLine();
 
             //Set the properties for each of the cars
             //Call each of the methods for each car
@@ -59,12 +70,12 @@ namespace CarLotSimulator
 
             foreach (var item in carLotInstance.ListOfCars)
             {
-                Console.WriteLine(item.Year);
-                Console.WriteLine(item.Make);
-                Console.WriteLine(item.Model);
-                item.MakeEngineNoise();
-                item.MakeHonkNoise(item.HonkNoise);
-                Console.WriteLine();
+                //Console.WriteLine(item.Year);
+                //Console.WriteLine(item.Make);
+                //Console.WriteLine(item.Model);
+                //item.MakeEngineNoise();
+                //item.MakeHonkNoise(item.HonkNoise);
+                //Console.WriteLine();
 
 
             }
